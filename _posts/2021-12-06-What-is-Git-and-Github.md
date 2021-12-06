@@ -1,3 +1,9 @@
+---
+layout: post
+title: What is Git and Github
+comments: true
+---
+
 # Git과 Github
 
 ## git이란?
@@ -22,6 +28,6 @@ git은 branch를 통해 마치 평행세계처럼 코드의 흐름을 분산시�
 
 ##github란?
 
-가장 많이 사용되는 무료 git 저장소이다. 
+가장 많이 사용되는 무료 git 저장소이다.
 
 다른 사람들과 협업하거나, 오픈 소스를 배포할 때 사용할 수 있다.
