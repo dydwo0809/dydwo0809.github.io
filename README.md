@@ -1,56 +1,49 @@
-# Jekyll GitBook
+# OS
 
-Make Jelly site have a GitBook look!
+Window
 
-## Demo
+## 사전 준비
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
+1. git(git bash) 설치
 
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
+2. github에 dydwo0809.github.io 저장소 생성 
 
-## Why Jekyll with GitBook
+3. ruby, jekyll 설치
 
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
+## 로컬, 리모트 저장소 연결
 
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
+1. dydwo0809.github.io 저장소에서 클론
 
-## How to Get Started
+2. C 밑에 blog 디렉토리 생성
 
-This theme can be used just as other [Jekyll themes][1].
+3. git bash에서 blog 디렉토리로 이동
 
-[Fork][3] this repository and add your markdown posts to the `_posts` folder.
+4. blog 디렉토리에서 git clone <클론한거 붙여넣기>
 
-### Deploy Locally with Jekyll Serve
+5. blog 밑에 dydwo0809.github.io 디렉토리 생성완료
 
-This theme can be ran locally using Ruby and Gemfiles.
+## 블로그 생성
 
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
+1. git bash에서 dydwo0809.github.io 디렉토리로 이동
 
-## How to generate TOC
+2. jekyll new . --force
 
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
+3. bundle add webrick
 
-```yaml
-toc:
-    enabled: true
-```
+## 테마 적용
 
-## License
+1. gitbook 홈페이지에서 클론
 
-This work is open sourced under the Apache License, Version 2.0.
+2. blog 디렉토리에서 git clone <클론한거 붙여넣기>
 
-Copyright 2019 Tao He.
+3. 새로 생긴 gitbook 디렉토리의 내용물 전부 dydwo0809.github.io 디렉토리에 덮어씌움
 
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
+4. dydwo0809.github.io로 가서 다시 jekyll new . --force, bundle add webrick
+
+5. _config.yml에서 title, longtitle을 Yongjae's blog로 수정
+
+6. _config.yml에서 author를 Kwon-Yongjae로, email을 dydwo0809@naver.com으로 수정
+
+7. _config.yml에서 url과 baseurl을 'https://dydwo0809.github.io/'로 수정
+
+## 댓글 기능 구현
