@@ -86,4 +86,20 @@ Window
 
 4. White, Sepia, Night중 White를 눌러 배경색은 흰색으로 유지
 
-## 포스트 작성
+5. 파비콘은 깃북 테마에서 제공해주는 파비콘 사용
+
+## "What is Git and Github" 포스트 작성
+
+1. git bash에서 dydwo0809.gibhub.io 폴더로 이동
+
+2. _posts 폴더로 이동
+
+3. vi What-is-Git-and-Github.md 명령어 입력
+
+4. 댓글 기능 구현을 위해 comments: True로 설정
+
+5. git과 github에 관한 내용 작성
+
+6. git add, coommit, push
+
+7. github 블로그에서 What is Git and Github 포스트가 생성된 것을 확인
